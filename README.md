@@ -8,7 +8,7 @@ It allows users to input a pairwise comparison matrix and instantly calculates t
 ## 🚀 Features
 
 - **Dynamic Matrix Generation** – Easily generate a pairwise comparison matrix based on the number of criteria (**N**) you specify (supports N = 2 to 20).  
-- **Fraction Input Support** – Accepts both decimals and fractions (e.g., `1/3` or `5/2`).  
+- **Fraction Input Support** – Accepts both decimals and fractions (e.g., `1/3` or `1/5` etc).  
 - **Automatic Reciprocal Calculation** – The lower triangle of the matrix is automatically filled with reciprocals of the upper triangle values.  
 - **Comprehensive Results** – Displays:
   - Maximum eigenvalue (**λ<sub>max</sub>**)
