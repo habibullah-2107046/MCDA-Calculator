@@ -56,7 +56,9 @@ Since this is a **client-side web app** (HTML, CSS, JavaScript only), it runs di
 
 1. **Download the Files**  
    Clone this repository or download the following files into a single folder: `index.html` `style.css` `script.js`
-2. **Open in Browser**  
+    ```bash
+   https://github.com/habibullah-2107046/AHP-Calculator.git
+3. **Open in Browser**  
 Double-click the `index.html` file — it will open automatically in your default browser (Chrome, Firefox, Edge, etc.).
 
 ✅ That’s it! The AHP Calculator will be fully functional offline in your local browser.
