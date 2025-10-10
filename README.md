@@ -82,8 +82,11 @@ This project is distributed under the **MIT License** — you are free to use, m
 
 AHP-Calculator/
 │
+
 ├── index.html # Defines the user interface and structure
+
 ├── style.css # Styles the layout, buttons, and tables
+
 └── script.js # Handles matrix generation and AHP logic
 
 ---
