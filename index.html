@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AHP Calculator</title>
+
+  <!-- Link external CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Link external Js for export as excel file -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+
+</head>
+
+<body>
+  <div class="card">
+    <h1><strong>AHP Calculator</strong></h1>
+    <hr>
+    <p class="authorDetails">Developed By: <strong>Md. Habibullah Masbah</strong></p>
+    <p class="authorDetails">Student ID: <strong>2107046</strong></p>
+    <p class="authorDetails">Department of Urban and Regional Planning</p>
+    <p class="authorDetails">Rajshahi University of Engineering and Technology (RUET)</p>
+    <hr>
+    <h3 id="ackHead"><strong>Acknowledgement</strong></h3>
+    <p class="acknowledgement">This project is developed as part of the academic coursework for the subject:
+      “Operation Research and System Analysis” offered by the Department of Urban and Regional Planning (URP), RUET.
+      I would like to express my sincere gratitude to <Strong><a href="https://www.urp.ruet.ac.bd/muhaiminulurp" id="sir" target="_blank">Mohaiminul Islam</a></Strong>,Assistant Professor, Department
+      of Urban and Regional Planning, RUET,
+      for his valuable guidance and encouragement in developing this project.</p>
+    <hr>
+    <div class="row">
+      <label for="criteriaCount">Enter Number of criteria :</label>
+      <input id="criteriaCount" type="number" min="2" max="20" value="3">
+      <button id="generateBtn">Generate Matrix</button>
+      <div style="flex:1"></div>
+      <button id="calculateBtn" style="display:none">Calculate AHP</button>
+    </div>
+
+    <div id="matrixContainer" class="small"></div>
+    <div id="result" class="result"></div>
+
+    <!-- Export button at bottom -->
+    <div class="export-container">
+      <button id="exportBtn" style="display:none;">Export to Excel</button>
+    </div>
+
+
+    <div id="matrixContainer" class="small"></div>
+    <div id="result" class="result"></div>
+  </div>
+
+  <!-- Link external JS -->
+  <script src="script.js"></script>
+</body>
+
+</html>
