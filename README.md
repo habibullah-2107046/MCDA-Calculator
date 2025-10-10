@@ -55,9 +55,7 @@ Since this is a **client-side web app** (HTML, CSS, JavaScript only), it runs di
 ### Steps:
 
 1. **Download the Files**  
-   Clone this repository or download the following files into a single folder:index.html
-style.css
-script.js
+   Clone this repository or download the following files into a single folder: `index.html` `style.css` `script.js`
 2. **Open in Browser**  
 Double-click the `index.html` file — it will open automatically in your default browser (Chrome, Firefox, Edge, etc.).
 
