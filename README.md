@@ -56,6 +56,7 @@ Since this is a **client-side web app** (HTML, CSS, JavaScript only), it runs di
 
 1. **Download the Files**  
    Clone this repository or download the following files into a single folder: `index.html` `style.css` `script.js`
+   
     ```bash
    https://github.com/habibullah-2107046/AHP-Calculator.git
 3. **Open in Browser**  
