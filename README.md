@@ -104,3 +104,6 @@ You can view the live version here:
 **Developed by [Md. Habibullah Masbah](https://github.com/habibullah-2107046)**  
 🎓 Department of Urban & Regional Planning, RUET
 
+---
+
+**© 2025 Md. Habibullah Masbah — RUET, Bangladesh**
