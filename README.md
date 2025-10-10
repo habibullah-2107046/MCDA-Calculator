@@ -81,6 +81,7 @@ This project is distributed under the **MIT License** — you are free to use, m
 ## 📂 Project Structure
 
 AHP-Calculator/
+
 │
 
 ├── `index.html` # Defines the user interface and structure
