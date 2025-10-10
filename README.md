@@ -103,12 +103,10 @@ You can view the live version here:
 
 **Developed by [Md. Habibullah Masbah](https://github.com/habibullah-2107046)**  
 🎓 Department of Urban & Regional Planning, RUET
-
 🆔 Student ID: **2107046**  
-
 📧 Email: [2107046.habibullah@gmail.com](mailto:2107046.habibullah@gmail.com)
-
 Last Updated On: 10 October, 2025
+
 ---
 
 **© 2025 Md. Habibullah Masbah — RUET, Bangladesh**
