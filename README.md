@@ -101,6 +101,18 @@ You can view the live version here:
 
 ---
 
+## 📚 Acknowledgment  
+This project was developed as part of the academic coursework for the subject:  
+**“Operation Research and System Analysis”**  
+offered by the **Department of Urban and Regional Planning (URP), RUET**.
+
+I would like to express my sincere gratitude to  
+**Mohaiminul Islam**,  
+*Assistant Professor, Department of Urban and Regional Planning, RUET*,  
+for his valuable guidance and encouragement in developing this project.
+
+---
+
 **Developed by [Md. Habibullah Masbah](https://github.com/habibullah-2107046)**  
 🎓 Department of Urban & Regional Planning, RUET
 🆔 Student ID: **2107046**  
