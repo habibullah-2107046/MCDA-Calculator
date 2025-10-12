@@ -25,10 +25,11 @@
     <h3 id="ackHead"><strong>Acknowledgement</strong></h3>
     <p class="acknowledgement">This project is developed as part of the academic coursework for the subject:
       “Operation Research and System Analysis” offered by the Department of Urban and Regional Planning (URP), RUET.
-      I would like to express my sincere gratitude to <Strong><a href="https://www.urp.ruet.ac.bd/muhaiminulurp" id="sir" target="_blank">Mohaiminul Islam</a></Strong>,Assistant Professor, Department
+      I would like to express my sincere gratitude to <strong><a href="https://www.urp.ruet.ac.bd/muhaiminulurp" id="sir" target="_blank">Mohaiminul Islam</a></strong>, Assistant Professor, Department
       of Urban and Regional Planning, RUET,
       for his valuable guidance and encouragement in developing this project.</p>
     <hr>
+
     <div class="row">
       <label for="criteriaCount">Enter Number of criteria :</label>
       <input id="criteriaCount" type="number" min="2" max="20" value="3">
@@ -38,16 +39,17 @@
     </div>
 
     <div id="matrixContainer" class="small"></div>
-    <div id="result" class="result"></div>
+
+    <!-- Results wrapped inside a responsive rounded box -->
+    <div class="result-box" id="resultBox" aria-live="polite" role="region">
+      <div id="result" class="result"></div>
+    </div>
 
     <!-- Export button at bottom -->
     <div class="export-container">
       <button id="exportBtn" style="display:none;">Export to Excel</button>
     </div>
 
-
-    <div id="matrixContainer" class="small"></div>
-    <div id="result" class="result"></div>
   </div>
 
   <!-- Link external JS -->
