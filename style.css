@@ -37,7 +37,7 @@ body {
   border-radius: 20px;
   box-shadow: var(--shadow);
   width: 100%;
-  max-width: 720px;
+  max-width: 920px; /* slightly wider to give room */
   padding: 30px 28px;
   transition: all 0.3s ease;
 }
@@ -192,10 +192,10 @@ input.cell[readonly] {
 
 /* ========== Result Section ========== */
 .result {
-  margin-top: 16px;
+  margin-top: 4px; /* inside the box we already have padding */
   font-size: 14px;
   overflow-x: auto;
-  padding-top: 10px;
+  width: 100%;
 }
 
 .good {
@@ -292,6 +292,7 @@ button, input, .card, table {
     width: 100%;
   }
 }
+
 /* === Center Tables Elegantly === */
 #matrixContainer,
 .result table {
@@ -329,4 +330,42 @@ button, input, .card, table {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
   background: #ffffffd0;
+}
+
+/* === Result Rounded Box === */
+.result-box {
+  background: linear-gradient(180deg, #ffffff, #fffaf6);
+  border-radius: 18px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  margin-top: 18px;
+  transition: all 0.25s ease;
+  overflow: hidden; /* keep inner content tidy */
+  border: 1px solid rgba(0,0,0,0.03);
+}
+
+.result-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+@media (max-width: 640px) {
+  .result-box {
+    padding: 12px;
+    border-radius: 14px;
+    margin-top: 14px;
+  }
+}
+
+/* Make small paragraphs inside the result compact */
+.result p.small {
+  margin: 6px 0 10px 0;
+  font-size: 14px;
+}
+
+/* Ensure the normalized result table doesn't overflow the box awkwardly */
+.result table {
+  max-width: 100%;
+  overflow-x: auto;
+  display: block;
 }
