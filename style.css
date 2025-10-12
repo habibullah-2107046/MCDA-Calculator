@@ -340,8 +340,12 @@ button, input, .card, table {
   padding: 20px;
   margin-top: 18px;
   transition: all 0.25s ease;
-  overflow: hidden; /* keep inner content tidy */
-  border: 1px solid rgba(0,0,0,0.03);
+  overflow-x: auto;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .result-box:hover {
@@ -349,23 +353,37 @@ button, input, .card, table {
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
 }
 
+/* Center the result text and tables neatly */
+.result {
+  width: 100%;
+  max-width: 800px;  /* keeps it elegant on large screens */
+  text-align: center;
+}
+
+.result table {
+  margin: 16px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  background: #ffffffd0;
+  width: auto;
+  min-width: 320px;
+}
+
+.result pre {
+  text-align: left;
+  margin: 10px auto;
+  max-width: 600px;
+}
+
+/* Responsive adjustments */
 @media (max-width: 640px) {
   .result-box {
-    padding: 12px;
+    padding: 14px;
     border-radius: 14px;
-    margin-top: 14px;
   }
-}
 
-/* Make small paragraphs inside the result compact */
-.result p.small {
-  margin: 6px 0 10px 0;
-  font-size: 14px;
-}
-
-/* Ensure the normalized result table doesn't overflow the box awkwardly */
-.result table {
-  max-width: 100%;
-  overflow-x: auto;
-  display: block;
+  .result table {
+    transform: scale(0.95);
+    transform-origin: center;
+  }
 }
