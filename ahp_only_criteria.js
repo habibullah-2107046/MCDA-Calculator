@@ -210,7 +210,7 @@ function exportToExcel() {
     return;
   }
 
-  // ---- 1️⃣ Pairwise Comparison Matrix ----
+  // ---- 1️ Pairwise Comparison Matrix ----
   const pairwiseTable = matrixContainer.querySelector('table');
   const pairwiseData = [];
 
@@ -232,7 +232,7 @@ function exportToExcel() {
     });
   }
 
-  // ---- 2️⃣ Normalized Matrix ----
+  // ---- 2️ Normalized Matrix ----
   const normalizedTable = resultSection.querySelector('table');
   const normalizedData = [];
 
@@ -246,7 +246,7 @@ function exportToExcel() {
     });
   }
 
-  // ---- 3️⃣ Priority Vector ----
+  // ---- 3️ Priority Vector ----
   const priorityText = resultSection.querySelector('pre')?.textContent || "";
   let priorityData = [["Criteria", "Weight"]];
   if (priorityText.includes(",")) {
@@ -258,7 +258,7 @@ function exportToExcel() {
     weights.forEach((w, i) => priorityData.push([`C${i + 1}`, w]));
   }
 
-  // ---- 4️⃣ Consistency Information ----
+  // ---- 4️ Consistency Information ----
   const infoText = resultSection.querySelector('p.small')?.textContent || "";
   const CRstatus = resultSection.querySelector('.good, .bad')?.textContent || "";
 
@@ -279,7 +279,7 @@ function exportToExcel() {
     ["Judgment", CRstatus],
   ];
 
-  // ---- 5️⃣ Build the Excel Workbook ----
+  // ---- 5️ Build the Excel Workbook ----
   const wb = XLSX.utils.book_new();
 
   // Sheet 1: Pairwise Comparison Matrix
@@ -307,5 +307,6 @@ function exportToExcel() {
   // ---- Save Excel File ----
   XLSX.writeFile(wb, "AHP_Full_Result.xlsx");
 }
+
 
 
