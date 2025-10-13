@@ -48,7 +48,7 @@ body {
 }
 
 /* ========== Titles ========== */
-h1 {
+h1,h4 {
   text-align: center;
   font-size: 30px;
   color: var(--accent);
@@ -387,3 +387,4 @@ button, input, .card, table {
     transform-origin: center;
   }
 }
+
