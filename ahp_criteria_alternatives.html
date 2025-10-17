@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AHP Calculator</title>
+
+  <link rel="stylesheet" href="ahp_criteria_alternatives.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+</head>
+
+<body>
+  <div class="card">
+    <h1><strong>AHP For Multiple Criteria & Alternatives</strong></h1>
+    <hr>
+    <hr>
+
+    <!-- Controls -->
+    <div class="controls">
+  <div class="input-row">
+    <div class="input-group">
+      <label for="criteriaCount">Number of criteria </label>
+      <input id="criteriaCount" type="number" min="2" max="12" value="3">
+    </div>
+    <div class="input-group">
+      <label for="alternativeCount">Number of alternatives </label>
+      <input id="alternativeCount" type="number" min="2" max="12" value="3">
+    </div>
+  </div>
+
+  <div class="button-row">
+    <button id="generateBtn">Generate All Matrices</button>
+    <button id="calculateBtn" style="display:none">Calculate AHP</button>
+  </div>
+</div>
+
+    <!-- Containers -->
+    <div id="matrixContainer" class="matrix-list"></div>
+
+    <!-- Final Results -->
+    <div class="result-box" id="finalResultBox" aria-live="polite" role="region" style="display:none">
+      <div id="result" class="result"></div>
+    </div>
+
+    <!-- Export -->
+    <div class="export-container">
+      <button id="exportBtn" style="display:none;">Export to Excel</button>
+    </div>
+  </div>
+
+  <script src="ahp_criteria_alternatives.js"></script>
+</body>
+</html>

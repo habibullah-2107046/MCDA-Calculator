@@ -1,0 +1,263 @@
+/* === Root Theme === */
+:root {
+  --accent: #c08457;
+  --accent-hover: #a86c43;
+  --bg: #f2f3f7;
+  --text-dark: #1e293b;
+  --card-bg: rgba(255,255,255,0.92);
+  --shadow: 0 10px 25px rgba(0,0,0,0.1);
+  font-family: "Poppins", "Inter", Arial, sans-serif;
+  color: var(--text-dark);
+}
+
+* { box-sizing: border-box; margin:0; padding:0; }
+
+/* === Page Layout === */
+body {
+  min-height: 100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background: var(--bg);
+  padding:20px;
+}
+
+/* === Card === */
+.card {
+  width:100%;
+  max-width:1100px;
+  background: var(--card-bg);
+  border-radius: 18px;
+  padding: 26px;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(0,0,0,0.04);
+}
+
+/* === Titles === */
+h1 {
+  text-align:center;
+  color:var(--accent);
+  font-size:28px;
+  margin-bottom:8px;
+}
+hr {
+  border:none;
+  height:1px;
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
+  margin:10px 0;
+}
+.authorDetails {
+  text-align:center;
+  font-size:13px;
+  color:#374151;
+  margin-bottom:8px;
+}
+
+/* === Input Controls Section === */
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+/* Row of label + input pairs */
+.input-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Each label-input pair */
+.input-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 240px;
+  justify-content: center;
+}
+label {
+  font-weight: 600;
+  font-size: 15px;
+  color: #333;
+}
+
+/* Input box styling (both number & text) */
+input[type="number"],
+input[type="text"]:not(.cell) {
+  width: 120px;
+  padding: 8px 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 14px;
+  background: #fff;
+  text-align: center;
+  transition: border 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+
+input[type="number"]:focus,
+input[type="text"]:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(192,132,87,0.2);
+}
+
+/* === Button Row === */
+.button-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+button {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-weight:600;
+  cursor:pointer;
+  transition: all .25s ease;
+  box-shadow: 0 4px 10px rgba(192,132,87,0.25);
+  min-width: 150px;
+}
+button:hover {
+  background: var(--accent-hover);
+  transform: translateY(-2px);
+}
+button:disabled {
+  opacity:.6;
+  cursor:not-allowed;
+  box-shadow:none;
+}
+
+/* === Matrices and Results === */
+.matrix-list { margin-top:8px; display:flex; flex-direction:column; gap:18px; }
+
+.matrix-panel {
+  background: linear-gradient(180deg,#fff,#fffaf6);
+  border-radius:12px;
+  padding:12px;
+  border:1px solid rgba(0,0,0,0.03);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.04);
+}
+.matrix-panel h3 {
+  margin:0 0 8px 0;
+  color:var(--accent);
+  font-size:16px;
+  text-align:center;
+}
+
+.matrix-panel .table-wrap {
+  display:flex; justify-content:center; overflow-x:auto;
+}
+.matrix-panel table {
+  width:auto; min-width:260px;
+  border-collapse:collapse;
+  border-radius:8px;
+  overflow:hidden;
+  box-shadow:0 4px 10px rgba(0,0,0,0.04);
+}
+.matrix-panel th, .matrix-panel td {
+  border:1px solid #e6e9ef;
+  padding:8px 10px;
+  text-align:center;
+  font-size:13px;
+  background:#fafafa;
+}
+.matrix-panel th {
+  background:#f7f3ef;
+  color:var(--accent-hover);
+  font-weight:700;
+}
+
+/* === Matrix Inputs === */
+input.cell {
+  width:70px;
+  text-align:center;
+  padding:8px 6px;
+  border-radius:8px;
+  border:1px solid #cbd5e1;
+  font-size:13px;
+  background:#fff;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+input.cell:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(192,132,87,0.25);
+}
+input.cell[readonly] { background:#f1f5f9; color:#475569; }
+
+/* === Inline Result === */
+.inline-result {
+  margin-top:12px;
+  background: linear-gradient(180deg,#ffffff,#fffaf6);
+  border-radius:12px;
+  padding:12px;
+  border:1px solid rgba(0,0,0,0.03);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:100%;
+}
+.inline-result .content { max-width:900px; width:100%; text-align:center; }
+.inline-result .small { font-size:13px; color:#374151; margin-bottom:6px; }
+
+/* === Final Results === */
+.result-box {
+  margin-top:16px;
+  border-radius:14px;
+  padding:14px;
+  background:linear-gradient(180deg,#fff,#fffaf6);
+  box-shadow:0 6px 18px rgba(0,0,0,0.06);
+  border:1px solid rgba(0,0,0,0.03);
+}
+.result { font-size:14px; overflow-x:auto; text-align:center; max-width:100%; }
+.result table { margin:12px auto; width:auto; min-width:280px; border-collapse:collapse; }
+.result th, .result td { border:1px solid #e6e9ef; padding:8px 10px; }
+.good { color:#059669; font-weight:700; }
+.bad { color:#dc2626; font-weight:700; }
+pre { background:#f9fafb; padding:10px; border-radius:8px; overflow:auto; text-align:left; }
+
+/* === Export Button === */
+.export-container { text-align:right; margin-top:12px; }
+#exportBtn { background:#c08457; padding:10px 16px; }
+#exportBtn:hover { background:#a86c43; }
+
+/* === Responsive === */
+@media (max-width:720px) {
+  .input-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .input-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .button-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  input[type="number"],
+  input.cell {
+    width: 100%;
+  }
+
+  h1 { font-size:22px; }
+  .authorDetails { font-size:12px; }
+  .matrix-panel table th, .matrix-panel table td {
+    font-size:12px;
+    padding:6px;
+  }
+}
