@@ -97,7 +97,7 @@ AHP-Calculator/
 
 ### 🌐 Live Demo
 You can view the live version here:  
-👉 [AHP Calculator (GitHub Pages)](https://habibullah-2107046.github.io/MCDA-Calculator/)
+👉 [MCDA Calculator (GitHub Pages)](https://habibullah-2107046.github.io/MCDA-Calculator/)
 
 ---
 
